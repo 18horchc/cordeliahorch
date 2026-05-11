@@ -1,0 +1,18 @@
+#skip-nav:focus {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 9999;
+  width: auto;
+  height: auto;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  white-space: normal;
+  background: #fff;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  outline: 2px solid #3d2645;
+}

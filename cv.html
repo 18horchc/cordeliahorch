@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Curriculum vitae." />
+    <title>Your Name · CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Source Sans 3", "system-ui", "sans-serif"],
+              serif: ["Source Serif 4", "Georgia", "serif"],
+            },
+            colors: {
+              page: "#f7f5f6",
+              ink: "#1c1917",
+              muted: "#57534e",
+              line: "#e6e1e4",
+              brand: {
+                plum: "#3d2645",
+                blush: "#dbc2cf",
+                mist: "#9fa2b2",
+                teal: "#3c7a89",
+                olive: "#809848",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body class="min-h-screen bg-page bg-[linear-gradient(180deg,#f7f5f6_0%,#faf8f9_50%,#f5f3f5_100%)] font-sans text-ink antialiased">
+    <a href="#main" id="skip-nav" class="sr-only">Skip to content</a>
+
+    <div class="mx-auto flex min-h-screen max-w-6xl flex-col lg:flex-row">
+      <aside
+        class="border-b border-line bg-white/95 px-6 py-10 shadow-[inset_-1px_0_0_rgba(219,194,207,0.35)] lg:w-72 lg:shrink-0 lg:border-b-0 lg:border-r lg:border-brand-blush/40 lg:px-8 lg:py-12"
+      >
+        <div class="flex flex-col gap-8 lg:sticky lg:top-12">
+          <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
+            <div
+              class="mb-4 h-32 w-32 shrink-0 overflow-hidden rounded-full border border-brand-blush/60 bg-stone-200 shadow-sm ring-2 ring-brand-teal/15"
+              role="img"
+              aria-label="Profile photo placeholder"
+            >
+              <div class="flex h-full w-full items-center justify-center text-xs text-muted">Photo</div>
+            </div>
+            <h1 class="font-serif text-2xl font-semibold tracking-tight text-brand-plum">Your Name</h1>
+            <p class="mt-2 max-w-xs text-sm leading-relaxed text-muted">
+              Researcher / Your discipline<br />
+              PhD, Institution
+            </p>
+          </div>
+
+          <nav aria-label="Primary">
+            <ul class="space-y-1 text-[15px]">
+              <li>
+                <a href="index.html" class="block rounded-md px-3 py-2 text-muted transition hover:bg-brand-blush/20 hover:text-brand-plum"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="publications.html" class="block rounded-md px-3 py-2 text-muted transition hover:bg-brand-blush/20 hover:text-brand-plum"
+                  >Publications</a
+                >
+              </li>
+              <li>
+                <a href="blog.html" class="block rounded-md px-3 py-2 text-muted transition hover:bg-brand-blush/20 hover:text-brand-plum"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="cv.html"
+                  class="block rounded-md border border-brand-blush/50 bg-brand-blush/35 px-3 py-2 font-medium text-brand-plum"
+                  aria-current="page"
+                  >CV</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="border-t border-line pt-6 text-center text-sm text-muted lg:text-left">
+            <p class="font-medium text-brand-plum">Contact</p>
+            <a
+              href="mailto:you@university.edu"
+              class="mt-1 block text-[15px] text-brand-teal underline decoration-brand-mist/70 underline-offset-2 hover:text-brand-plum hover:decoration-brand-plum"
+              >you@university.edu</a
+            >
+            <ul class="mt-4 flex justify-center gap-4 lg:justify-start" aria-label="Social links">
+              <li><a href="#" class="transition hover:text-brand-teal">Twitter</a></li>
+              <li><a href="#" class="transition hover:text-brand-teal">LinkedIn</a></li>
+              <li><a href="#" class="transition hover:text-brand-teal">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <main id="main" class="min-w-0 flex-1 px-6 py-10 lg:px-12 lg:py-14">
+        <article class="max-w-2xl">
+          <header class="mb-10 flex flex-col gap-6 border-b border-brand-blush/60 pb-8 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p class="text-sm font-medium uppercase tracking-wider text-brand-teal">Career</p>
+              <h2 class="mt-2 font-serif text-3xl font-semibold tracking-tight text-brand-plum lg:text-4xl">Curriculum Vitae</h2>
+            </div>
+            <a
+              href="#"
+              class="inline-flex shrink-0 items-center justify-center rounded-lg border border-brand-teal/40 bg-white px-4 py-2.5 text-sm font-semibold text-brand-teal shadow-sm transition hover:bg-brand-teal/10 hover:border-brand-teal/60"
+              >Download PDF</a
+            >
+          </header>
+          <p class="mb-10 text-[17px] leading-relaxed text-stone-700">
+            Point the button above to
+            <code class="rounded bg-brand-blush/40 px-1.5 py-0.5 font-mono text-sm text-brand-plum ring-1 ring-brand-blush/60">/cv.pdf</code>
+            (upload your CV alongside these HTML files). The sections below mirror a typical academic CV; edit freely.
+          </p>
+
+          <section class="mb-12" aria-labelledby="edu">
+            <h3 id="edu" class="border-b border-brand-blush/60 pb-2 font-serif text-lg font-semibold text-brand-plum">Education</h3>
+            <ul class="mt-4 space-y-4 text-[17px] leading-relaxed text-stone-700">
+              <li class="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <div>
+                  <p class="font-medium text-brand-plum">PhD in Your Field</p>
+                  <p class="text-muted">University Name — Advisor: Name</p>
+                </div>
+                <p class="shrink-0 text-muted sm:text-right">20XX – 20XX</p>
+              </li>
+              <li class="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <div>
+                  <p class="font-medium text-brand-plum">MSc / BSc (Honours), Major</p>
+                  <p class="text-muted">Institution</p>
+                </div>
+                <p class="shrink-0 text-muted sm:text-right">20XX – 20XX</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="mb-12" aria-labelledby="exp">
+            <h3 id="exp" class="border-b border-brand-blush/60 pb-2 font-serif text-lg font-semibold text-brand-plum">Appointments</h3>
+            <ul class="mt-4 space-y-4 text-[17px] leading-relaxed text-stone-700">
+              <li class="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <div>
+                  <p class="font-medium text-brand-plum">Postdoctoral Researcher</p>
+                  <p class="text-muted">Department, University</p>
+                </div>
+                <p class="shrink-0 text-muted sm:text-right">20XX – present</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="mb-12" aria-labelledby="awards">
+            <h3 id="awards" class="border-b border-brand-blush/60 pb-2 font-serif text-lg font-semibold text-brand-plum">Honours &amp; funding</h3>
+            <ul class="mt-4 list-inside list-disc space-y-2 text-[17px] leading-relaxed text-stone-700 marker:text-brand-teal/70">
+              <li>Fellowship or award name, organisation (20XX)</li>
+              <li>Travel grant, conference (20XX)</li>
+            </ul>
+          </section>
+
+          <section class="mb-12" aria-labelledby="teach">
+            <h3 id="teach" class="border-b border-brand-blush/60 pb-2 font-serif text-lg font-semibold text-brand-plum">Teaching</h3>
+            <ul class="mt-4 space-y-3 text-[17px] leading-relaxed text-stone-700">
+              <li>
+                <span class="font-medium text-brand-plum">Course title</span>
+                <span class="text-muted"> — role (TA / lecturer), University, term 20XX</span>
+              </li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="skills">
+            <h3 id="skills" class="border-b border-brand-blush/60 pb-2 font-serif text-lg font-semibold text-brand-plum">Skills</h3>
+            <p class="mt-4 text-[17px] leading-relaxed text-stone-700">
+              Languages, frameworks, lab techniques, or languages spoken—whatever matches your field.
+            </p>
+          </section>
+        </article>
+
+        <footer class="mt-20 max-w-2xl border-t border-brand-blush/50 pt-8 text-sm text-brand-mist">
+          <p>
+            <span class="text-brand-olive/90">&copy;</span> <span id="y"></span> Your Name. All views expressed are my own.
+          </p>
+        </footer>
+      </main>
+    </div>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
