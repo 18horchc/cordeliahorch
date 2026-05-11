@@ -1,0 +1,26 @@
+# Cursor / editor metadata
+mcps/
+.cursor/
+.vscode/
+.idea/
+
+# Design-phase reference material (not part of the published site)
+uploads/
+
+# OS / system junk
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Editor backups / temp files
+*.bak
+*.tmp
+*.swp
+*~
+~$*
+
+# Local environment
+.env
+.env.local
